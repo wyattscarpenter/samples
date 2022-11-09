@@ -35,7 +35,7 @@
 
     <h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC samples</a> <span>Stream from a video to a peer connection</span>
     </h1>
-
+<input type="file" oninput="/*alert(value);*/ const objectURL = window.URL.createObjectURL(files[0]); getElementById('leftVideo').src = objectURL">
     <video id="leftVideo" playsinline controls muted>
         <!-- NB CORS: https://bugzilla.mozilla.org/show_bug.cgi?id=1177793 -->
         <source src="../../../video/chrome.webm" type="video/webm"/>
